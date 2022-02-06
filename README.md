@@ -28,6 +28,8 @@ GET:  /chat/<room_id>
 
 //Add messages to a room
 POST:  /chat/<room_id>
+
+also created a get, a register, and a auth endpoint for Users, and a delete for messages
 ```
 
 ## If you want to run the project localy
