@@ -68,8 +68,6 @@ also created a get, a register, and a auth endpoint for Users, and a delete for 
 
 ## Admin page
 
-//ROOMS and MESSAGE functions
-//Return all rooms 
 The admin page is the ADD and DELETE functions on the rooms aside bar, to set a admin for the project, you can use
 a API tester like Insomnia, to pass the admin role 'roles:['admin']' to some user, and then sign in with his credentials
 
