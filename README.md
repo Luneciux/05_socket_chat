@@ -1,6 +1,6 @@
 # Socket Chat API + Front App
 
-Socket Chat API its a project that I made using Node.js + Express + MongoDB (Mongoose)
+Socket Chat API its a project that I made using Node.js + Express + MongoDB (Mongoose) + Bulma CSS
 
 ## Installation
 
@@ -14,7 +14,7 @@ First have the web development dependencies installed, such as:
 
 You can use npm for the packages... :/
 
-Lastly, you can download the project and install/configure mongoDB to create a database for testing
+Now, you can download the project and install/configure mongoDB to create a database for testing
 
 ## If you want to run the project localy
 
@@ -82,4 +82,17 @@ Feel free to use the TestAPI Setup on the repository
 Use the Json Model, on the register, and set the role for the user, notice that the email is the unique field that is used to 
 authenticate the user
 
+## Future features
+
+- Some part of the code aren't good organized, so, I want to review the code again and organize the components and whatever need to
+
+- The css is just a mess, isn't organized, and the style need some revisions, specialy in the padding/margin/width issues
+
+- The server should create a Admin user as default (if isnt already setup), but I didn't had that time to do this, so, maybe a new feature
+
+- The states on the vuex, and the components should be better eficient, just passing the importante informations on the correct places
+
+- The states on the vuex, and the components should be better eficient, just passing the importante informations on the correct places
+
+- Lastly, thank you for reading, and feel free to coment or talk to me on my instagram @elielcosta_j :)
 
