@@ -23,9 +23,32 @@ POST: /chat/createRoom/
 //Delete a room
 DELETE: /chat/<room_id>
 
-//Retorna as mensagens de uma sala
+//Retorn a room messages
 GET:  /chat/<room_id>
 
-//Adiciona uma mensagem referenciando uma sala
+//Add messages to a room
 POST:  /chat/<room_id>
+```
+
+## If you want to run the project localy
+
+You cant just clone the project and run a NPM i / install at the client or the server folder
+
+Then, you can run:
+
+```javascript
+
+//In the client folder 
+C:/ ... 
+yarn dev
+
+//In the serve folder 
+C:/ ... 
+node src/index
+
+or even
+
+//if you use nodemon
+npx nodemon src/index
+
 ```

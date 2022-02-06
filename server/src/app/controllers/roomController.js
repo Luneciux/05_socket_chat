@@ -38,7 +38,7 @@ router.post('/createRoom', async (req, res) => {
   }
 });
 
-router.delete('/:roomId', async (req, res) => {
+router.delete('/room/:roomId', async (req, res) => {
   try {
     const room = await Room.findByIdAndRemove(req.params.roomId);
 
@@ -79,6 +79,24 @@ router.get('/:roomId', async (req, res) => {
     });
     
     res.send({ room_messages });
+  } catch (err) {
+    return res.status(400).send({ error: 'Error loading messages' });
+  }
+});
+
+
+router.delete('/roomMessages/:roomId', async (req, res) => {
+  try { 
+    const { roomId } = req.params;
+
+    const messages = await Message.find()
+    
+    messages.forEach(async msg => {
+      if(msg.room == roomId)
+        await Message.findByIdAndRemove(msg._id);
+    });
+    
+    res.send({ roomId });
   } catch (err) {
     return res.status(400).send({ error: 'Error loading messages' });
   }

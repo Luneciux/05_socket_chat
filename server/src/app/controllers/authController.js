@@ -16,13 +16,14 @@ function generateToken( params = {}){
 }
 
 router.post('/register', async (req, res) => {
-  const { email } = req.body;
   try {
+    const { email } = req.body;
+
     if(await User.findOne({ email }))
       return res.status(400).send({ error: 'User already exists' })
     
     const user = await User.create(req.body);
-
+    
     user.password = undefined;
 
     return res.send({ 
@@ -53,6 +54,17 @@ router.post('/authenticate', async (req, res) => {
     user,
     token: generateToken({ id: user.id }), 
   });
+
+});
+
+router.get('/user/:userId', async (req, res) => {
+  try { 
+    const user = await User.findById(req.params.userId);
+
+    res.send({ user });
+  } catch (err) {
+    return res.status(400).send({ error: 'Error loading user' });
+  }
 
 });
 
