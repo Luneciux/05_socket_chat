@@ -9,7 +9,8 @@ First have the web development dependencies installed, such as:
 - Node
 - MongoDB
 - A IDE (ex: Vs Code)
-- Vue CLI
+- Vue CLI 
+- The project use Vite + Vue 3
 
 You can use npm for the packages... :/
 
