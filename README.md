@@ -1,4 +1,4 @@
-# Socket Chat API
+# Socket Chat API + Front App
 
 Socket Chat API its a project that I made using Node.js + Express + MongoDB (Mongoose)
 
