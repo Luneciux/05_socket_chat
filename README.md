@@ -4,7 +4,7 @@ Socket Chat API its a project that I made using Node.js + Express + MongoDB (Mon
 
 ## Installation
 
-First have installed the web development dependencies, like:
+First have the web development dependencies installed, such as:
 
 - Node
 - MongoDB
@@ -13,7 +13,7 @@ First have installed the web development dependencies, like:
 
 You can use npm for the packages... :/
 
-Finaly, you can download the project and install/configure the mongoDB to create a database for testing
+Lastly, you can download the project and install/configure mongoDB to create a database for testing
 
 ## If you want to run the project localy
 
