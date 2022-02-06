@@ -68,7 +68,6 @@ also created a get, a register, and a auth endpoint for Users, and a delete for 
 
 ## Admin page
 
-```javascript
 //ROOMS and MESSAGE functions
 //Return all rooms 
 The admin page is the ADD and DELETE functions on the rooms aside bar, to set a admin for the project, you can use
@@ -78,5 +77,5 @@ Feel free to use the TestAPI Setup on the repository
 
 Use the Json Model, on the register, and set the role for the user, notice that the email is the unique field that is used to 
 authenticate the user
-```
+
 
