@@ -28,6 +28,12 @@ Then, you can run:
 C:/ ... 
 yarn dev
 
+or even
+
+//if you use npm
+npm run serve
+
+
 //In the serve folder 
 C:/ ... 
 node src/index
