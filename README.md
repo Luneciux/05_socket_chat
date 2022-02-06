@@ -4,7 +4,39 @@ Socket Chat API its a project that I made using Node.js + Express + MongoDB (Mon
 
 ## Installation
 
-You can download the project and install the mongoDB to create a database for testing ou even use mongoDb Atlas
+First have installed the web development dependencies, like:
+
+- Node
+- MongoDB
+- A IDE (ex: Vs Code)
+- Vue CLI
+
+You can use npm for the packages... :/
+
+Finaly, you can download the project and install/configure the mongoDB to create a database for testing
+
+## If you want to run the project localy
+
+You cant just clone the project and run a NPM i / install at the client or the server folder
+
+Then, you can run:
+
+```javascript
+
+//In the client folder 
+C:/ ... 
+yarn dev
+
+//In the serve folder 
+C:/ ... 
+node src/index
+
+or even
+
+//if you use nodemon
+npx nodemon src/index
+
+```
 
 
 ## The project have the following endpoints
@@ -30,27 +62,4 @@ GET:  /chat/<room_id>
 POST:  /chat/<room_id>
 
 also created a get, a register, and a auth endpoint for Users, and a delete for messages
-```
-
-## If you want to run the project localy
-
-You cant just clone the project and run a NPM i / install at the client or the server folder
-
-Then, you can run:
-
-```javascript
-
-//In the client folder 
-C:/ ... 
-yarn dev
-
-//In the serve folder 
-C:/ ... 
-node src/index
-
-or even
-
-//if you use nodemon
-npx nodemon src/index
-
 ```
